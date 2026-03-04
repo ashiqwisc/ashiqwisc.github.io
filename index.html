@@ -3,6 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <title>Muhammad Ashiq</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 24px;
+      color: #111;
+    }
+
+    .pub-list {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      margin-top: 18px;
+    }
+
+    .pub-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+    }
+
+    .pub-thumb {
+    flex: 0 0 210px;
+  }
+
+  .pub-thumb img {
+    width: 210px;
+    height: 130px;
+    object-fit: contain;   /* show the full image */
+    background: #fff;      /* nice if aspect ratios differ */
+    border-radius: 6px;
+    display: block;
+    border: 1px solid #ddd;
+    padding: 4px;          /* optional, gives breathing room */
+  }
+
+    .pub-body {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .pub-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin: 0 0 4px 0;
+    }
+
+    .pub-authors {
+      margin: 0 0 4px 0;
+      font-size: 0.92rem;
+      color: #555;
+    }
+
+    .pub-venue {
+      margin: 0 0 8px 0;
+      font-size: 0.92rem;
+      color: #666;
+      font-style: italic;
+    }
+
+    .pub-links {
+      font-size: 0.9rem;
+    }
+
+    .pub-links a {
+      text-decoration: none;
+      margin-right: 8px;
+    }
+
+    .pub-links a:hover {
+      text-decoration: underline;
+    }
+
+    nav a {
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <h1>Muhammad Ashiq</h1>
@@ -15,60 +98,108 @@
   <hr>
 
   <a id="about"></a>
-<h2>About Me</h2>
-<table>
-  <tr>
-    <td valign="top" style="padding-right: 20px;">
-      <img src="images/Ashiq_Muhammad.jpeg" alt="Portrait of Muhammad Ashiq" width="200"><br><br>
-      <a href="https://www.linkedin.com/in/muhammad-ashiq-b1b933216/" target="_blank">🔗 LinkedIn</a><br>
-      <a href="https://github.com/ashiqwisc" target="_blank">💻 GitHub</a><br>
-      <a href="https://scholar.google.com/citations?user=9iKpHcgAAAAJ&hl=en" target="_blank">📚 Google Scholar</a><br>
-      <a href="cv.pdf" target="_blank">📄 CV</a><br>
-      📧 ashiq [at] wisc [dot] edu
-    </td>
-    <td valign="top">
-      <p>
-        I am a senior undergraduate at the University of Wisconsin-Madison studying mathematics and computer science, working with <a href="https://grigoris.ece.wisc.edu/" target="_blank">Prof. Grigorios Chrysos</a>. My research interests are in <strong>reliable, private, and secure machine learning and statistics.</strong> 
-      </p>
-      <p>
-        In particular, I work on adversarial/distributional robustness, uncertainty quantification, and unlearning, focusing on formal guarantees, with a recent emphasis on diffusion models. I am also interested in leveraging diffusion models for scientific applications.
-      </p>
-      <p>
-        Previously, I worked with <a href="https://edpsych.education.wisc.edu/staff/wang-yeyu/" target="_blank">Yeyu Wang</a> and the <a href="https://www.epistemicanalytics.org/" target="_blank">Epistemic Analytics</a> lab on learning analytics. Specifically, I worked as a software engineer for the <a href="https://www.epistemicnetwork.org/" target="_blank">ENA webtool</a> and associated R packages (TMA, rENA, etc.). I also helped apply TransModal Analysis (TMA), a multimodal learning analytics framework, to several projects in clinical simulation, AI-assisted education, and more.
-      </p>
-      <p>
-        <span style="color: red; font-weight: bold;">I am currently applying to Ph.D. programs for Fall 2026 and to industry research internships for Summer 2026. Please feel free to reach out if you believe I would be a good fit.</span>
-      </p>
-    </td>
-  </tr>
-</table>
-<hr>
+  <h2>About Me</h2>
+  <table>
+    <tr>
+      <td valign="top" style="padding-right: 20px;">
+        <img src="images/Ashiq_Muhammad.jpeg" alt="Portrait of Muhammad Ashiq" width="200"><br><br>
+        <a href="https://www.linkedin.com/in/muhammad-ashiq-b1b933216/" target="_blank">🔗 LinkedIn</a><br>
+        <a href="https://github.com/ashiqwisc" target="_blank">💻 GitHub</a><br>
+        <a href="https://scholar.google.com/citations?user=9iKpHcgAAAAJ&hl=en" target="_blank">📚 Google Scholar</a><br>
+        <a href="cv.pdf" target="_blank">📄 CV</a><br>
+        📧 ashiq [at] wisc [dot] edu
+      </td>
+      <td valign="top">
+        <p>
+          I am a senior undergraduate at the University of Wisconsin-Madison studying mathematics and computer science, working with
+          <a href="https://grigoris.ece.wisc.edu/" target="_blank">Prof. Grigorios Chrysos</a>.
+          My research interests are in <strong>flow-based generative models</strong> (e.g. diffusion, flow matching, etc.).
+          In particular, I work on:
+        </p>
+        <ul>
+          <li>
+            <strong>Trustworthiness</strong>: Attacks and defenses on the reliability, privacy, and security of these models.
+          </li>
+          <li>
+            <strong>Scientific Applications</strong>: Extending these models to solve problems across science and engineering: inverse problems, data assimilation, PDE solving, and more.
+          </li>
+        </ul>
+        <p>
+          Previously, I worked with <a href="https://edpsych.education.wisc.edu/staff/wang-yeyu/" target="_blank">Yeyu Wang</a> and the
+          <a href="https://www.epistemicanalytics.org/" target="_blank">Epistemic Analytics</a> lab on
+          <a href="https://en.wikipedia.org/wiki/Learning_analytics" target="_blank">learning analytics</a>.
+        </p>
+      </td>
+    </tr>
+  </table>
+  <hr>
 
   <a id="publications"></a>
-  <h2>Publications</h2>
+  <h2>Selected Publications</h2>
 
-  <h3>Machine Learning</h3>
-  <ol>
-    <li>
-      <strong>M.H. Ashiq</strong>, P. Triantafillou, H.Y. Tseng, G.G. Chrysos. Inducing Uncertainty on Open-Weight Models for Test-Time Privacy in Image Recognition.
-      <em>Long Paper, NeurIPS Workshop on Regulatable ML, 2025. In Submission, ICLR'26.</em>
-      <a href="https://www.arxiv.org/abs/2509.11625">[arxiv]</a> <a href="https://www.arxiv.org/pdf/2509.11625">[pdf]</a> <a href="https://github.com/ashiqwisc/test_time_privacy">[code]</a>
-    </li>
-    <li>
-      L. Zhou, <strong>M.H. Ashiq</strong>, G.G. Chrysos. Data Augmentations for Arithmetic Length Generalization in Transformers.
-      <em>NeurIPS Workshop on What Can('t) Transformers Do, 2025. In Submission, ICLR'26.</em>
-    </li>
-  </ol>
+  <div class="pub-list">
 
-  <h3>Learning Analytics</h3>
-  <ol>
-    <li>
-      <strong>M.H. Ashiq</strong>, M. Shah, A.J. Davis, Y. Wang, B. Eagan, F.A. Jimenez, C.L. Wilson, D.W. Shaffer. Illustrating the Interplay of Behavioral Patterns and Clinical Competencies in a Virtual Patient Simulation Using Epistemic Network Analysis.
-      <em>Proceedings of the 18th International Conference of the Learning Sciences, 2024.</em>
-    </li>
-  </ol>
-  <p>
-    Other publications in learning analytics can be found at my <a href="https://scholar.google.com/citations?user=9iKpHcgAAAAJ&hl=en" target="_blank">Google Scholar</a>.
+    <article class="pub-card">
+      <div class="pub-thumb">
+        <img src="images/pubs/ddim_vs_ddpm_thumb.png" alt="Thumbnail for DDIM vs DDPM paper">
+      </div>
+      <div class="pub-body">
+        <p class="pub-title">
+          Why DDIM Hallucinates More than DDPM: A Theoretical Analysis of Reverse Dynamics
+        </p>
+        <p class="pub-authors">
+          <strong>M. H. Ashiq</strong>, S. Arora, A. N. Harish, I. Kharbanda, H. Y. Tseng, G. G. Chrysos
+        </p>
+        <p class="pub-venue">
+          In Submission, ICML'26
+        </p>
+      </div>
+    </article>
+
+    <article class="pub-card">
+      <div class="pub-thumb">
+        <img src="images/pubs/test_time_privacy_thumb.png" alt="Thumbnail for test-time privacy paper">
+      </div>
+      <div class="pub-body">
+        <p class="pub-title">
+          Inducing Uncertainty on Open-Weight Models for Test-Time Privacy in Image Recognition
+        </p>
+        <p class="pub-authors">
+          <strong>M. H. Ashiq</strong>, P. Triantafillou, H. Y. Tseng, G. G. Chrysos
+        </p>
+        <p class="pub-venue">
+          NeurIPS Workshop on Regulatable ML, 2025. In Submission, ICML'26
+        </p>
+        <p class="pub-links">
+          <a href="https://www.arxiv.org/abs/2509.11625" target="_blank">ArXiv</a> /
+          <a href="https://www.arxiv.org/pdf/2509.11625" target="_blank">PDF</a> /
+          <a href="https://github.com/ashiqwisc/test_time_privacy" target="_blank">Code</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub-card">
+      <div class="pub-thumb">
+        <img src="images/pubs/arith_length_generalization_thumb.png" alt="Thumbnail for arithmetic length generalization paper">
+      </div>
+      <div class="pub-body">
+        <p class="pub-title">
+          Data Augmentations for Arithmetic Length Generalization in Transformers
+        </p>
+        <p class="pub-authors">
+          L. Zhou, <strong>M. H. Ashiq</strong>, G. G. Chrysos
+        </p>
+        <p class="pub-venue">
+          NeurIPS Workshop on What Can't Transformers Do, 2025. In Submission, ICML'26
+        </p>
+      </div>
+    </article>
+
+  </div>
+
+  <p style="margin-top: 28px;">
+    Other publications, including all those in learning analytics, can be found at my
+    <a href="https://scholar.google.com/citations?user=9iKpHcgAAAAJ&hl=en" target="_blank">Google Scholar</a>.
   </p>
   <hr>
 
@@ -76,6 +207,6 @@
   <h2>Miscellaneous</h2>
   <ul>
     <li><a href="coursework.html">Coursework List</a></li>
-    </ul>
+  </ul>
 </body>
 </html>

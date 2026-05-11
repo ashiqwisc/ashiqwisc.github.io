@@ -71,7 +71,11 @@
 
     .pub-links a {
       text-decoration: none;
-      margin-right: 8px;
+    }
+
+    .pub-links a + a::before {
+      content: " / ";
+      color: #111;
     }
 
     .pub-links a:hover {
@@ -84,6 +88,10 @@
 
     nav a:hover {
       text-decoration: underline;
+    }
+
+    .email {
+      white-space: nowrap;
     }
   </style>
 </head>
@@ -106,12 +114,11 @@
         <a href="https://www.linkedin.com/in/muhammad-ashiq-b1b933216/" target="_blank">🔗 LinkedIn</a><br>
         <a href="https://github.com/ashiqwisc" target="_blank">💻 GitHub</a><br>
         <a href="https://scholar.google.com/citations?user=9iKpHcgAAAAJ&hl=en" target="_blank">📚 Google Scholar</a><br>
-        📧 ashiq [at] wisc [dot] edu
+        <span class="email">📧 mashiq [at] umich [dot] edu</span>
       </td>
       <td valign="top">
         <p style="margin-bottom: 16px;">
-          I am a senior undergraduate at the University of Wisconsin-Madison studying mathematics and computer science, working with
-          <a href="https://grigoris.ece.wisc.edu/" target="_blank">Prof. Grigorios Chrysos</a>. Starting in Summer 2026, I will join the University of Michigan as a Ph.D. student in EECS at the <a href="https://deepthink-umich.github.io/index.html" target="_blank">DeepThink Lab</a>, advised by <a href="https://qingqu.engin.umich.edu/" target="_blank">Prof. Qing Qu</a> and working closely with <a href="https://sites.google.com/view/ismailalkhouri/about" target="_blank">Dr. Ismail Alkhouri</a> at Los Alamos National Laboratory.
+          Hello! I am an EECS Ph.D. student at the University of Michigan in the <a href="https://deepthink-umich.github.io/index.html" target="_blank">DeepThink Lab</a>, advised by <a href="https://qingqu.engin.umich.edu/" target="_blank">Qing Qu</a> and working closely with <a href="https://sites.google.com/view/ismailalkhouri/about" target="_blank">Ismail Alkhouri</a> at Los Alamos National Laboratory.
         </p>
         <p>
           My research interests are in <strong>flow-based generative models</strong> (e.g. <a href="https://en.wikipedia.org/wiki/Diffusion_model" target="_blank">diffusion</a>, <a href="https://mlg.eng.cam.ac.uk/blog/2024/01/20/flow-matching.html" target="_blank">flow matching</a>, etc.).
@@ -126,7 +133,8 @@
           </li>
         </ul>
         <p>
-          Previously, I worked with <a href="https://edpsych.education.wisc.edu/staff/wang-yeyu/" target="_blank">Yeyu Wang</a> and the
+          Previously, I was an undergraduate at the University of Wisconsin-Madison studying mathematics and computer science, working with
+          <a href="https://grigoris.ece.wisc.edu/" target="_blank">Grigorios Chrysos</a> on trustworthy ML. I also worked with <a href="https://ywang2466.github.io/" target="_blank">Yeyu Wang</a> and the
           <a href="https://www.epistemicanalytics.org/" target="_blank">Epistemic Analytics</a> lab on
           <a href="https://en.wikipedia.org/wiki/Learning_analytics" target="_blank">learning analytics</a>.
         </p>
@@ -152,7 +160,11 @@
           <strong>M. H. Ashiq</strong>, S. Arora, A. N. Harish, I. Kharbanda, H. Y. Tseng, G. G. Chrysos
         </p>
         <p class="pub-venue">
-          In Submission, ICML'26
+          International Conference on Machine Learning (ICML), 2026. 
+        </p>
+        <p class="pub-links">
+          <a href="https://arxiv.org/abs/2605.06831" target="_blank">arXiv</a>
+          <a href="https://arxiv.org/pdf/2605.06831" target="_blank">PDF</a>
         </p>
       </div>
     </article>
@@ -169,11 +181,11 @@
           <strong>M. H. Ashiq</strong>, P. Triantafillou, H. Y. Tseng, G. G. Chrysos
         </p>
         <p class="pub-venue">
-          NeurIPS Workshop on Regulatable ML, 2025. In Submission, ICML'26
+          Neural Information Processing Systems (NeurIPS) Workshop on Regulatable ML, 2025. 
         </p>
         <p class="pub-links">
-          <a href="https://www.arxiv.org/abs/2509.11625" target="_blank">ArXiv</a> /
-          <a href="https://www.arxiv.org/pdf/2509.11625" target="_blank">PDF</a> /
+          <a href="https://www.arxiv.org/abs/2509.11625" target="_blank">arXiv</a>
+          <a href="https://www.arxiv.org/pdf/2509.11625" target="_blank">PDF</a>
           <a href="https://github.com/ashiqwisc/test_time_privacy" target="_blank">Code</a>
         </p>
       </div>
@@ -191,7 +203,7 @@
           L. Zhou, <strong>M. H. Ashiq</strong>, G. G. Chrysos
         </p>
         <p class="pub-venue">
-          NeurIPS Workshop on What Can't Transformers Do, 2025. In Submission, ICML'26
+          Neural Information Processing Systems (NeurIPS) Workshop on What Can't Transformers Do, 2025. 
         </p>
       </div>
     </article>
